@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VitaMove®</title>
+<meta name="keywords" content="fisioterapia, fisioterapia amadora, fisioterapia reboleira, vitamove, osteopatia, osteopatia amadora, osteopatia reboleira, fisioterapia ao domicilio, fisioterapia lisboa, massagens, massagem, pilates, pilates clinico, ginasio, trx, classes de movimento, drenagem linfatica, massagem redutora, massagem de relaxamento, gabinete de fisioterapia, clinica de fisioterapia, fisioterapeuta, " />
+<meta name="description" content="Unidade privada de saúde, que oferece serviços na área de Fisioterapia, Osteopatia e Bem-Estar, a preços muito competitivos." />
+<link rel="shortcut icon" type="image/x-icon" href="images/icon/icon.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/slippry.css">
+<link rel="stylesheet" type="text/css" href="css/ultimasnovidades.css">
+
+<!-- libs -->
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/slippry.js"></script>
+
+<!-- custom js -->
+<script type="text/javascript" src="js/news-global-variables.js"></script>
+<script type="text/javascript" src="js/includeHeaderFooter.js"></script>
+<script type="text/javascript" src="js/insertLatestNews.js"></script>
+<script type="text/javascript" src="js/registerEvents.js"></script>
+
+<script type="text/javascript">
+
+var slider;
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+    slider = $("#slider").slippry({
+					transition: 'fade',
+					useCSS: true,
+					speed: 1000,
+					pause: 3000,
+					auto: true,
+					preload: 'visible'
+				});
+				
+	// insert latest news
+	insertLatestNewsAccordingWithPage(NUMBER_OF_NEWS - 3, NUMBER_OF_NEWS);
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+	<div id="fb-root"></div>
+	<script>
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+	<div id="all">
+		<div id="back">
+			<div id="header"> 	
+				<!-- RENDER PARTIAL VIEW HERE -->	
+			</div>
+			
+			<div id="contentarea">
+				<div id="content">
+				
+	
+				<div style="margin-left: 30%;">Venha conhecer o seu espaço de saúde e bem-estar! </div>
+					
+				<div style="padding-bottom: 2%; margin-left: 34%; margin-top: 2%; font-style: italic;">A sua vida, com saúde, em movimento.</div>
+					
+
+					<div class="clearspace"></div>
+					
+					<div id="vitamoveslider" style="width: 75%; height: 75%; margin:0 auto;">
+						<ul id="slider">
+						  <li>
+							<a href="#slide1">
+							  <img src="images/instalacoes/recepcao1.jpg" alt="Recepção">
+							</a>
+						  </li>
+						  <li>
+							<a href="#slide2">
+							  <img src="images/instalacoes/gabinete11.jpg" alt="Gabinete 1">
+							</a>
+						  </li>
+						   <li>
+							<a href="#slide3">
+							  <img src="images/instalacoes/gabinete12.jpg" alt="Gabinete 1">
+							</a>
+						  </li>
+						  <li>
+							<a href="#slide4">
+							  <img src="images/instalacoes/gabinete21.jpg" alt="Gabinete 2">
+							</a>
+						  </li>
+							<li>
+							<a href="#slide5">
+							  <img src="images/instalacoes/gabinete22.jpg" alt="Gabinete 2">
+							</a>
+						  </li>
+						   <li>
+							<a href="#slide6">
+							  <img src="images/instalacoes/ginasio1.jpg" alt="Ginásio">
+							</a>
+						  </li>
+						   <li>
+							<a href="#slide7">
+							  <img src="images/instalacoes/ginasio2.jpg" alt="Ginásio">
+							</a>
+						  </li>
+						</ul>
+					</div>
+						
+					<div class="clearspace"></div>
+						
+					<div style="margin-top: 4%;">
+						<div class="news blue" style="width: 70%;">
+							<span style="padding: 3px;">Últimas Novidades</span>
+							<ul>
+								<!-- 	<li><a href="novidades.html">Março 2016 - Promoção: Massagem Terapêutica</li>
+										<li><a href="novidades.html">Janeiro 2016 - Feliz Ano!</a></li>
+										<li><a href="novidades.html">Dezembro 2015 - Feliz Natal!</a></li>
+										<li><a href="novidades.html">Dezembro 2015 - Promoções de Natal</a></li> 
+								-->
+							</ul>
+						</div>
+					</div> 
+					
+<!-- 					<div style="margin-left: 25%;">
+						<div style="padding-bottom: 1%;">Veja as nossas últimas novidades também no facebook:</div>
+						
+						<div style="" class="fb-page" 
+									 data-href="https://www.facebook.com/gabinetevitamove" 
+									 data-tabs="timeline" 
+									 data-width="500"
+									 data-small-header="false" 
+									 data-adapt-container-width="true" 
+									 data-hide-cover="false" 
+									 data-show-facepile="true">
+									 <div class="fb-xfbml-parse-ignore">
+										<blockquote cite="https://www.facebook.com/facebook">
+											<a href="https://www.facebook.com/facebook">Facebook</a>
+										</blockquote>
+									</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<!-- RENDER PARTIAL VIEW HERE -->	
+		</div>
+	</div>
+
+	
+
+</body>
+

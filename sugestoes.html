@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VitaMove®</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/icon/icon.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+
+<script type="text/javascript" src="js/includeHeaderFooter.js"></script>
+
+<script type="text/javascript" src="js/registerEvents.js"></script>
+
+
+</head>
+
+<style>
+
+#disqus_thread{
+     position: relative;
+}
+#disqus_thread:after{
+     content: "";
+     display: block;
+     height: 55px;
+     width: 100%;
+     position: absolute;
+     bottom: 0px;
+     background:white;
+}
+
+</style>
+
+<body>
+
+	<div id="all">
+		<div id="back">
+			<div id="header"> 	
+				<!-- RENDER PARTIAL VIEW HERE -->	
+			</div>
+			
+			<div id="contentarea">
+				<div id="content">
+		
+					<div style="">
+						<p>Deixe aqui as suas sugestões.</p>
+						<p>Muito obrigado.</p> 
+					</div>
+					
+					<div style="margin-top: 3%;">
+					
+						<div id="disqus_thread"></div>
+						<script>
+						/**
+						* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+						* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+						*/
+						
+						var disqus_config = function () 
+						{
+							this.page.url = 'http://wwww.vitamove.pt/sugestoes.html'; // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = 'sugestoes'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							this.page.title = 'Sugestões';
+						};
+						
+						(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+
+						s.src = '//vitamove.disqus.com/embed.js';
+
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+					
+					</div>
+			</div>		
+		</div>
+		
+		<div id="footer">
+			<!-- RENDER PARTIAL VIEW HERE -->	
+		</div>
+
+	</div>
+
+</body>
+

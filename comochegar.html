@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VitaMove®</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/icon/icon.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script type="text/javascript" src="js/includeHeaderFooter.js"></script>
+
+<script type="text/javascript" src="js/registerEvents.js"></script>
+
+
+<script>
+
+var slider;
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+  			
+				
+	$('.myMenu > li').bind('mouseover', openSubMenu);
+	$('.myMenu > li').bind('mouseout', closeSubMenu);
+		
+	function openSubMenu() {
+		$(this).find('ul').css('visibility', 'visible');	
+	};
+	
+	function closeSubMenu() {
+		$(this).find('ul').css('visibility', 'hidden');	
+	};
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+	<div id="all">
+
+		<div id="back">
+
+			<div id="header"> 	
+				<!-- RENDER PARTIAL VIEW HERE -->
+			</div>
+			
+			
+			<div id="contentarea">
+			
+				<div id="content">
+					
+					<div style="margin-left: 5%;">
+						<div style=" font-size: 16px; color: #00A3B1">Como Chegar?</div>
+					</div>
+					
+					<div style="clear:both;  padding:2%;"></div>
+					
+					<div class="personal-transport" style="margin-left: 5%;">
+						<div style=" font-size: 16px; font-weight:bold;">Transporte Pessoal</div>
+						
+						<div style="transport-info-content">
+						
+							<img style="float: left; margin-left: -5%;" src="images/contactos/croqui.png" />
+							
+							<div style="  text-align: justify;   line-height: 250%; float: left; width: 45%; margin-top: 11%;">
+								<div style="margin-left: 8%;">
+									A 15 minutos do centro de Lisboa, perto
+									da Clínica de Sto. António e com
+									parqueamento gratuito. Os acessos
+									principais são o IC19 (Saída 3 – Amadora)
+									e a Estrada dos Cabos D’Ávila em direcção
+									à Amadora.
+								</div>
+							</div>
+						
+						</div>
+						
+					</div>
+					
+					<div style="clear:both; padding: 1%;"></div>
+					
+					<div class="public-transport" style="margin-left: 5%;">
+						<div style=" font-size: 16px; font-weight:bold;">Transporte Público</div>
+						
+						<div style="transport-info-content">
+						
+						
+							<div class="train">
+								<img style="margin-top: 3%; float: left; width: 130px; height: 80px;" src="images/contactos/cp.jpg" />
+								
+								<div style="margin-left: 10%; float: left; width: 75%; margin-top: 2%;">
+									<p><span  style="font-weight: bold; ">Comboio</span> (600m - ~11min)</p>
+									<p><span style="text-decoration: underline; ">Estação da Reboleira (Linha de Sintra)<span></p>
+									<p>Estamos a pouco mais de 11 minutos, num percurso pedonal, desde a Estação da Reboleira.</p>
+									<p style=" text-align: right; margin-right: 8%;"><a href="http://www.cp.pt/StaticFiles/CP/PDF/Passageiros/Horarios/lx/sintra_azambuja_dias_uteis.pdf">Horário Dias Úteis</a></p>
+									<p style=" text-align: right; margin-right: 8%;"><a href="http://www.cp.pt/StaticFiles/CP/PDF/Passageiros/Horarios/lx/sintra_azambuja_fim_semana_feriados.pdf">Horário Fins de Semana e Feriados</a></p>
+								</div>
+							</div>
+							
+							<div style="clear:both; padding: 1%;"></div>
+								
+							<div class="bus-metro">
+							
+								<div style="float : left; width: 20%;">
+									<img style="width: 150px; height: 100px;" src="images/contactos/logo_lt.jpg" />
+								</div>
+								
+								<div style="float : right; width: 75%; margin-top: 2%;">
+									
+									<p><span  style="font-weight: bold; ">Autocarros</span></p>
+									
+									<p style=" line-height: 220%; text-align: justify; width: 92%;" >
+										<span  style="font-weight: bold; ">Carreira 185:</span>
+										Amadora (Hospital) &#8596; 
+										<img style=" width: 20px; height: 20px;" src="images/header/vitamove_color_72dpi_2000x2000_symbol.jpg" align="top"/> Av. Manuel Alpedrinha (Escola) &#8596; Reboleira (Estação de Comboios) &#8596; 
+										Lisboa (Marquês de Pombal)
+									</p>
+									<p style=" text-align: right; margin-right: 8%;"><a href="http://www.vimeca.pt/script/www/?p=horarios&id=185">Horário</a></p>
+							
+~									<p style="line-height: 220%; text-align: justify; width: 92%;">
+										<span  style="font-weight: bold; ">Carreira 186:</span>
+										Amadora (Estação de Comboios) &#8596; 
+										<img style=" width: 20px; height: 20px;" src="images/header/vitamove_color_72dpi_2000x2000_symbol.jpg" alt="Smiley face" align="top" />Av. Manuel Alpedrinha (Escola) &#8596; 
+										<img style=" width: 20px; height: 20px;" src="images/contactos/Lisbon_metro_logo.gif" align="top"/> Amadora-Este (Estação de Metro)
+									</p>
+									<p style=" text-align: right; margin-right: 8%;"><a href="http://www.vimeca.pt/script/www/?p=horarios&id=186">Horário</a></p>
+									
+									<p style="line-height: 220%; text-align: justify; width: 92%;">
+										Poderá usar a rede de autocarros para chegar até nós. As
+										carreiras 185 e 186 param na nossa praceta, fazendo assim a
+										ligação com o metro e o comboio.
+									</p>
+									
+								</div>
+									
+									
+							</div>
+							
+						
+					
+						</div>
+					
+					<div style="clear:both; padding: 1%;"></div>
+					
+					
+					
+
+						</div>
+				
+					</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<!-- RENDER PARTIAL VIEW HERE -->
+		</div>
+	</div>
+
+
+</body>
+

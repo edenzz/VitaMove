@@ -1,0 +1,54 @@
+/* NEWS CSS */
+
+
+.fancybox {
+	padding-right: 2%;
+}
+
+.news-area {
+	
+	margin-top: 0.1%;
+	
+	border-top: solid #808080;
+	/* border-bottom: solid #808080; */
+	
+	border-right: none;
+	border-left: none;
+	border-width: 5px;
+	width: 95%;
+
+}
+
+.news-date
+{
+	padding-top: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.news-title
+{
+	text-decoration: underline;
+	color: #2E74B5;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	font-size: 17px;
+}
+
+.news-content {
+
+	padding-bottom: 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.news-images {
+	
+	padding-bottom: 20px;
+
+}
+
+.news-slogan {
+	padding-bottom: 20px;
+	font-size: 12px;
+}
